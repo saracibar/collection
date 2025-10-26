@@ -108,7 +108,7 @@ function displayItem(record, prev_id, next_id, compound_object) {
         itemLink = '<div class="btn-group" role="group" aria-label="Item options">'
         {% if stubs contains "timeline" %}
         /* add link to view on timeline */
-        if (item.date) {
+        if (item.date && !item.website_link) {
             var itemYear;
             if (item.date.includes('-')) {
                 itemYear = item.date.split('-')[0];
@@ -335,14 +335,11 @@ function displayItem(record, prev_id, next_id, compound_object) {
     }
 
     /* add timeline, map, and download button links */
-    if (!record.format.includes('external-link')) {
-        addButtons(record);
-        alert("uno");
-    }   
+    addButtons(record);  
    // if (item.format.includes('external-link')) {
      //  alert("dos");
     //}    
-                                                                                                                                                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                                                                                                                                 
     
 
     /* add content to item display area; page layout depends on item format */
