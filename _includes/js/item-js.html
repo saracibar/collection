@@ -335,12 +335,12 @@ function displayItem(record, prev_id, next_id, compound_object) {
     }
 
     /* add timeline, map, and download button links */
-    if (compoundFormat.includes('external-link')) {
+    if (record.format.includes('external-link')) {
         alert("uno");
     }   
-    if (item.format.includes('external-link')) {
-       alert("dos");
-    }    
+   // if (item.format.includes('external-link')) {
+     //  alert("dos");
+    //}    
                                                                                                                                                                                                                                                                                                                                                                                                                    
     addButtons(record);
 
