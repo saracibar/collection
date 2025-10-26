@@ -335,6 +335,13 @@ function displayItem(record, prev_id, next_id, compound_object) {
     }
 
     /* add timeline, map, and download button links */
+    if (compoundFormat.includes('external-link')) {
+        alert("uno");
+    }   
+    if (item.format.includes('external-link')) {
+       alert("dos");
+    }    
+                                                                                                                                                                                                                                                                                                                                                                                                                   
     addButtons(record);
 
     /* add content to item display area; page layout depends on item format */
