@@ -335,14 +335,15 @@ function displayItem(record, prev_id, next_id, compound_object) {
     }
 
     /* add timeline, map, and download button links */
-    if (record.format.includes('external-link')) {
+    if (!record.format.includes('external-link')) {
+        addButtons(record);
         alert("uno");
     }   
    // if (item.format.includes('external-link')) {
      //  alert("dos");
     //}    
                                                                                                                                                                                                                                                                                                                                                                                                                    
-    addButtons(record);
+    
 
     /* add content to item display area; page layout depends on item format */
     if (compound_object.length > 0 && !record.format.includes('multiple')) {
