@@ -72,7 +72,7 @@ function displayItem(record, prev_id, next_id, compound_object) {
             itemDisplay = item === record ? '' : '<img class="w-25" src="{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-record }}.svg" alt="No preview found">';
             itemDownload = findFileLink(item) != "" ? '<a href="' + findFileLink(item) + '" target="_blank" rel="noopener" class="btn btn-outline-primary" title="Object download">Link to Object</a>' : '';
         } else if (item.format.includes('external-link')) {
-            itemDisplay = '<iframe src="' + item.website_link + '" frameborder="0" width="100%"  height="100%"></iframe>';
+            itemDisplay = '<iframe src="' + item.website_link + '" frameborder="0" width="100%"  height="400px"></iframe>';
             itemDownload = '<a href="' + item.website_link + '" target="_blank" class="btn btn-outline-primary" title="' + item.title + '">' + item.title + '</a>';
         } else {
             /* fall back to no preview if it doesn't know the format */
