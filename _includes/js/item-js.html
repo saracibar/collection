@@ -73,10 +73,10 @@ function displayItem(record, prev_id, next_id, compound_object) {
             itemDownload = findFileLink(item) != "" ? '<a href="' + findFileLink(item) + '" target="_blank" rel="noopener" class="btn btn-outline-primary" title="Object download">Link to Object</a>' : '';
         } else if (item.website_link) {
             itemDisplay = '<img class="w-50" src="{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-default }}.svg" alt="No preview found">';
-            itemDownload = '<a href="https://google.es" target="_blank" class="btn btn-outline-primary popochas" title="Object download">Download Object POPOCHAS</a>';
+            itemDownload = '<a href="https://google.es" target="_blank" class="btn btn-outline-primary popochas" title="Object download">Download Object POPOCHAS1</a>';
         } else if (item.format.includes('external-link')) {
             itemDisplay = '<img class="w-50" src="{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-default }}.svg" alt="No preview found">';
-            itemDownload = '<a href="https://google.es" target="_blank" class="btn btn-outline-primary popochas" title="Object download">Download Object POPOCHAS</a>';
+            itemDownload = '<a href="https://google.es" target="_blank" class="btn btn-outline-primary popochas" title="Object download">Download Object POPOCHAS2</a>';
         } else {
             /* fall back to no preview if it doesn't know the format */
             itemDisplay = '<img class="w-50" src="{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-default }}.svg" alt="No preview found">';
